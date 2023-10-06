@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a1732fa203.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="sasa">
+        <div class="navnav">
+            <div class="fsaide">
+                <a href="/home.html">MHD NOUR KUZEZ</a>
+            </div>
+            <div class="secsaide">
+                <ul>
+                    <li><a href="/aboutme.html">ABOUT ME</a></li>
+                    <li><a href="/projects.html">PROJECTS</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="formsection"  id="form" >
+        <div class="formhead">
+            <h1>Contact Us</h1>
+            <div class="dashed">
+                <div class="dash"></div>
+                <div class="dash"></div>
+            </div>
+           <div class="formcontent">
+               <form name="myform" method="post" action="" onsubmit="return validateform()">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Email"name="email">
+                    <input type="text" placeholder="Phone"name="phone">
+                    <input type="text" placeholder="Title"name="title">
+                    <textarea name="" id="" cols="66" rows="4" placeholder="Message" name="text"></textarea>
+                    <input id="submit" type="submit" value="Get A Quote">
+                </form>
+           </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footerr">
+        <div class="footersection">
+            <div class="footercontent">
+                <h4>&copy; S2023.This Website By</h4>
+                <div class="name">
+                    <a href="#"><div>Mohamad-Nour-Kuzez</div></a>
+                    <a href="#"><div>Mohamad-Alsayed</div></a>
+                </div>
+                <h4><a href="https://www.svuonline.org/">SVU</a> - <a href="">S23 WP1</a></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+        alert("Name can't be blank"); 
+        if (name=="" || email=="" || phone=="" || title==""){  
+          alert(" plz full all filde ");  
+          return false;  
+        }  
+        }  
+    </script>  
+        
+
+    <!-- <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["name"].value;
+          let y = document.forms["myForm"]["email"].value;
+          let z = document.forms["myForm"]["phone"].value;
+          let w = document.forms["myForm"]["title"].value;
+          let t = document.forms["myForm"]["text"].value;
+          if (x == ""){
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+     </script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

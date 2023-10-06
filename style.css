@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,900;1,400&family=Sacramento&display=swap');
+
+
+
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+}
+/*---------------------------navbar style--------------------------*/
+nav,.sasa{
+    background-color: #344585;
+    height: 80px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+.nav, .navnav{
+    width: 75%;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a ,.navnav a{
+    color:white;
+    text-decoration: none;
+}
+.navnav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul a:hover, .navnav ul a:hover{
+    color: #CCD0E0;
+}
+.nav ul li,.navnav ul li{
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+}
+.nav p,.navnav p{
+    border: solid 2px white;
+    padding: 10px 30px;
+    color: white;
+}
+.nav .secsaide,.navnav .secsaide{
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.nav .fsaide a,.navnav .fsaide a{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav .box:hover p, .navnav .box:hover p{
+    background-color: white;
+    color: #6384FF;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+/*---------------------------- hero section-------------------------------- */
+.hero{
+    background-color: #6384FF;
+    padding-top: 0px;
+}
+.hero .content{
+    height: 550px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+.hero .content h1{
+    font-size: 45px;
+    padding-bottom: 0px;
+}
+.boxnav{
+    width: 40px;
+    height: 40px;
+    background-color: #344585;
+    position: absolute;
+    padding: 2px;
+    right: 0;
+    bottom: 0;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    animation:typing 1.2s linear infinite alternate;
+    font-size: 2rem;
+    width: 0;
+  }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /*---------------------------- service section-------------------------------- */
+  #services-section{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #323232;
+
+    
+}
+.services  h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 44px;
+    
+}
+.dashed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.dash:nth-of-type(1){
+    background-color:#6384FF;
+    width:128px;
+    height:2px;
+    border-radius: 3px;
+
+
+}
+
+.dash:nth-of-type(2){
+    background-color:#6384FF;
+    width:30px;
+    height:2px;
+    border-radius: 1px;
+    margin-left: 20px;
+
+
+}
+.services .blocks1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.services .block1{
+    text-align: center;
+    margin: 5px;
+}
+.services .block1 img{
+    margin-bottom: 20px;
+}
+
+.services .block1 p{
+    font-size: 18px;
+}
+.services h2{
+    font-size:30px;
+    color: #32325C;
+    margin-bottom: 40px;
+}
+
+/*------------------footer section-----------------------*/
+.footerr{
+    background-color: #ccd0e079;
+}
+.footerr .footersection{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 80px;
+
+}
+.footerr .footersection .footercontent{
+    color: #323232;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;  
+    font-size: 18px !important;
+}
+.footerr .footersection .footercontent h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.footerr .footersection .footercontent a{
+    color: #323232;
+}
+.footerr .footersection .footercontent .name div:hover{
+    color: #6384FF;
+}
+.footerr .footersection .footercontent a{
+    text-decoration: none;
+}
+
+.footerr .footersection .footercontent a:hover{
+    color: #6384FF;
+}
+/*-------------------------------teame -------------------------------------------------*/
+.teamSection{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    /* height: 1000px; */
+    /* margin-bottom: 800px; */
+}
+.teamSection .teamheader h1{
+    font-size: 35px;
+    line-height: 40px;
+    color: #323232;
+}
+.teamSection .teamcontent{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.teamSection .teamcontent .card{
+    margin-top: 50px;
+    width: 310px;
+    height: 450px;
+    text-align: center;
+    overflow:hidden;
+    color: #32325C;
+    cursor: pointer;
+}
+.teamSection .teamcontent .card img{
+    width: 100%;
+}
+.teamSection .teamcontent .card a{
+    color: #6384FF;
+    text-decoration: none;
+}
+.teamSection .teamcontent .card h1{
+    font-size: 25px;
+}
+.teamSection .teamcontent .card p{
+    font-size: 15px;
+    padding: 10px;
+}
+.teamSection .teamcontent .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.teamSection .teamcontent .card:hover h1{
+    color: #6384FF;
+}
+#carouselExampleControls{
+    background-color: #adb9c0;
+    padding: 20px 0;
+}
+
+/*-------------------end projects page------------------*/
+
+
+/*---------------------------about me-----------------------*/
+.all{
+    background: #eee;
+}
+.all .aboutme {
+    min-height: 100%;  
+    background: #eee;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #222;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 50px;
+  }
+  
+.all .container {
+    max-width: 700px;   
+    background: #fff;
+    margin: 0px auto 0px; 
+    box-shadow: 1px 1px 2px #DAD7D7;
+    border-radius: 3px;  
+    padding: 40px;
+    margin-top: 50px;
+  }
+  
+  .all .header {
+    margin-bottom: 30px;
+    
+    .full-name {
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    
+    .first-name {
+      font-weight: 700;
+    }
+    
+    .last-name {
+      font-weight: 300;
+    }
+    
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    
+    .email ,
+    .phone {
+      color: #999;
+      font-weight: 300;
+    } 
+    
+    .separator {
+      height: 10px;
+      display: inline-block;
+      border-left: 2px solid #999;
+      margin: 0px 10px;
+    }
+    
+    .position {
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: underline;
+    }
+  }
+  
+  
+  .details {
+    line-height: 20px;
+    
+    .section {
+      margin-bottom: 40px;  
+    }
+    
+    .section:last-of-type {
+      margin-bottom: 0px;  
+    }
+    
+    .section__title {
+      letter-spacing: 2px;
+      color: #54AFE4;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    
+    .section__list-item {
+      margin-bottom: 40px;
+    }
+    
+    .section__list-item:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    .left ,
+    .right {
+      vertical-align: top;
+      display: inline-block;
+    }
+    
+    .left {
+      width: 60%;    
+    }
+    
+    .right {
+      tex-align: right;
+      width: 39%;    
+    }
+    
+    .name {
+      font-weight: bold;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #000;
+      font-style: italic;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+      color: #000;
+    }
+    
+    .all .skills {
+      
+    }
+      
+    .skills__item {
+      margin-bottom: 10px;  
+    }
+    
+    .skills__item .right {
+      input {
+        display: none;
+      }
+      
+      label {
+        display: inline-block;  
+        width: 20px;
+        height: 20px;
+        background: #C3DEF3;
+        border-radius: 20px;
+        margin-right: 3px;
+      }
+      
+      input:checked + label {
+        background: #79A9CE;
+      }
+    }
+  }
+/*---------------------------end about me-------------------*/
+
+/*---------------START CONTACT PAGE-------------------------*/
+  .formsection{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    overflow-x: hidden;
+}
+.formsection .formhead h1{
+    font-size: 40px;
+    color: #323232;
+}
+.formsection .formcontent{
+    width: 80%;
+    margin: 0 auto;
+}
+.formsection form input[type=text]{
+    margin-bottom: 40px;
+    width: 350px;
+    height: 60px;
+    padding: 10px 25px;
+    margin-right: 20px;
+    border: solid 2px #323232;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+.formsection form textarea{
+    margin-right: 20px;
+    border: solid 2px #323232;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+
+}
+.formsection form input[type=submit]{
+    display: block;
+    font-size: 20px;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    margin-left: 53px;
+    width: 735px;
+    height: 80px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px #6384FF;
+    background-color: white;
+    color: #6384FF;
+    cursor: pointer;
+    
+}
+
+.formsection form input[type=submit]:hover{
+    border: solid 2px white;
+    background-color: #6384FF;
+    color: white;
+    transition: .3s ease-in;
+}
+.formfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6384FF;
+    font-size: 20px;
+}
+.formfooter .icon{
+    margin-left: 20px;
+}
+.formfooter .icon a{
+    color: #6384FF;
+}
+.formfooter .icon i{
+    margin-left: 6px;
+    font-size: 13px;
+}
+/*----------------------END CONTACT PAGE--------*/
+
+
+
+
+
+@media (max-width: 800px) {
+    nav ul{
+        display: none;
+    }
+    .hero .content {
+        flex-wrap: wrap;
+    }
+    .hero .content img{
+        width: 350px;
+    }
+    .services .blocks1{
+        flex-wrap: wrap;
+    }
+    .footersection .footercontent{
+        flex-wrap: wrap;
+    }
+    .formsection{
+        margin: 0 auto;
+    }
+    .formsection form input[type=text],.formsection form textarea{
+        display: block;
+        width: 180px;
+    }
+    .formsection form input[type=submit]{
+        width: 180px;
+        margin: 0;
+    }
+    .formsection form textarea{
+        height: 60;
+    }
+    .hero .content .text{
+        text-align: center;
+        padding-left: 30px
+    }
+    .hero .content .typed-out{
+        padding-left: 35px;
+    }
+    .pricing-list .content{
+        margin-bottom: 20px;
+    }
+    .search .img img{
+        margin-top: 30px;
+        width: 300px;
+    }
+    .services h1{
+        line-height: 40px;
+    }
+
+}
